@@ -1,9 +1,15 @@
 RewriteEngine On
 
+# CORS headers
 Header always set Access-Control-Allow-Origin "*"
 Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
 Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
 
-# Permitir solicitudes OPTIONS (Preflight)
-RewriteCond %{REQUEST_METHOD} OPTIONS
+# Responder correctamente a las solicitudes OPTIONS (preflight)
+RewriteCond %{REQUEST_METHOD} =OPTIONS
 RewriteRule ^(.*)$ $1 [R=200,L]
+
+# Opcional: redirigir todo a index.php si usas rutas limpias
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ index.php [L]
