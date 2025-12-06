@@ -2,10 +2,10 @@
 // backend/api/config/db.php
 
 // Datos de conexión a la base de datos
-$host = "localhost";       // Servidor donde está la base de datos
-$db_name = "agenda_db";    // Nombre de la base de datos
-$username = "root";        // Usuario de la base de datos
-$password = "1604";        // Contraseña del usuario
+$host = "bdf92alcsn8mf8okr6eq-mysql.services.clever-cloud.com";       // Servidor donde está la base de datos
+$db_name = "bdf92alcsn8mf8okr6eq";    // Nombre de la base de datos
+$username = "ukwopldsfmnymb8x";        // Usuario de la base de datos
+$password = "42t2oHCABpJ31ookbiWV";        // Contraseña del usuario
 
 try {
     // Construye el DSN (Data Source Name) con los parámetros de conexión

@@ -1,6 +1,6 @@
--- database.sql
+/*-- database.sql
 CREATE DATABASE IF NOT EXISTS agenda_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE agenda_db;
+USE agenda_db;*/
 
 CREATE TABLE IF NOT EXISTS usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
